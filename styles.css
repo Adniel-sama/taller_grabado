@@ -81,8 +81,6 @@ body {
 }
 
 
-
-
 .sidebar-mobile.open {
   transform: translateX(0);
 }
