@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Galería — Taller de grabado</title>
+  <title>Galería — Taller de arte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap -->
@@ -19,7 +19,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Taller de grabado</a>
+    <a class="navbar-brand" href="index.html">Taller de arte</a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,26 @@
   </div>
 </nav>
 
-<main class="main-content">
-  <article class="papel-largo p-5">
+<!-- SIDEBAR -->
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
+    <h6 class="text-uppercase mb-3">Galería</h6>
+    <ul class="nav flex-column gap-2">
+      <li><a href="#galeria-inicio" class="sidebar-link">Inicio</a></li>
+      <li><a href="#filtros" class="sidebar-link">Filtros</a></li>
+      <li><a href="#obras" class="sidebar-link">Obras</a></li>
+    </ul>
+  </div>
 
+  <!-- Toggle sidebar (solo móvil) -->
+  <div id="sidebarToggle" class="sidebar-toggle d-lg-none">&gt;</div>
+</aside>
+
+<!-- CONTENIDO -->
+<main class="main-content">
+  <article class="papel-largo p-5" id="galeria-inicio">
+
+    <!-- INTRO -->
     <section class="mb-5">
       <h1>Galería</h1>
       <p>
@@ -47,7 +64,7 @@
     </section>
 
     <!-- FILTROS -->
-    <section class="mb-4">
+    <section class="mb-4" id="filtros">
       <div class="d-flex flex-wrap gap-2">
         <button class="btn btn-outline-secondary btn-sm filtro active" data-filtro="all">
           Ver todo
@@ -65,7 +82,7 @@
     </section>
 
     <!-- GALERÍA -->
-    <section>
+    <section id="obras">
       <div class="row g-4">
 
         <div class="col-md-4 galeria-item" data-categoria="dibujo">
@@ -110,8 +127,8 @@
     <div class="container py-4">
       <div class="row align-items-center">
         <div class="col-md-6 mb-3 mb-md-0">
-          <strong>Taller de grabado</strong><br>
-          contacto@tallergrabado.cl
+          <strong>Taller de arte</strong><br>
+          contacto@tallerarte.cl
         </div>
         <div class="col-md-6 text-md-end">
           <i class="bi bi-instagram me-3"></i>
