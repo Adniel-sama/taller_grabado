@@ -1,3 +1,20 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebar = document.getElementById('sidebarMobile');
+  const tab = document.querySelector('.sidebar-tab');
+
+  if (sidebar && tab) {
+    sidebar.addEventListener('show.bs.offcanvas', () => {
+      tab.innerHTML = '&lt;';
+    });
+
+    sidebar.addEventListener('hidden.bs.offcanvas', () => {
+      tab.innerHTML = '&gt;';
+    });
+  }
+});
+
+
+
 // Filtros de galería
 document.addEventListener('DOMContentLoaded', () => {
   const filtros = document.querySelectorAll('.filtro');

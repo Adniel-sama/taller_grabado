@@ -106,6 +106,8 @@ footer {
 
 /* OFFCANVAS */
 .sidebar-mobile {
+  width: 80vw;
+  max-width: 320px;
   background-color: var(--sidebar-bg);
   color: #fff;
   font-family: var(--font-ui);
