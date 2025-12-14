@@ -3,9 +3,8 @@
   --font-base: "Century", "Libre Baskerville", serif;
   --font-ui: "Century Gothic", "Montserrat", sans-serif;
 
-  --sidebar-bg: #7a2e2e;
+  --sidebar-bg: #7a2e2e; /* terracota */
   --sidebar-width: 240px;
-  --sidebar-mobile-width: 78vw;
   --navbar-height: 56px;
 }
 
@@ -39,8 +38,7 @@ body {
 }
 
 .sidebar .nav-link {
-  color: #e6dcdc;
-  transition: color 0.15s ease, font-weight 0.15s ease;
+  color: #f2eaea;
 }
 
 .sidebar .nav-link:hover {
@@ -48,36 +46,50 @@ body {
   font-weight: 600;
 }
 
-/* TOGGLE MOBILE */
-.sidebar-tab {
-  position: fixed;
-  top: 45%;
-  left: 0;
-  background-color: var(--sidebar-bg);
-  color: #fff;
-  padding: 0.75rem 0.6rem;
-  border-radius: 0 6px 6px 0;
-  cursor: pointer;
-  z-index: 1051;
-  font-family: var(--font-ui);
-  transition: left 0.3s ease;
-}
-
 /* SIDEBAR MOBILE */
 .sidebar-mobile {
-  width: var(--sidebar-mobile-width);
+  position: fixed;
+  top: var(--navbar-height);
+  bottom: 0;
+  left: 0;
+  width: min(90vw, calc(100vw - 20px));
   background-color: var(--sidebar-bg);
-  color: #fff;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1050;
   font-family: var(--font-ui);
+}
+
+.sidebar-mobile.open {
+  transform: translateX(0);
+}
+
+.sidebar-mobile-inner {
+  padding: 2rem 1.5rem;
+  color: #f2eaea;
 }
 
 .sidebar-mobile .nav-link {
-  color: #e6dcdc;
+  color: #f2eaea;
 }
 
 .sidebar-mobile .nav-link:hover {
   color: #ffffff;
   font-weight: 600;
+}
+
+/* TOGGLE */
+.sidebar-toggle {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translateX(calc(100% - 1px));
+  background-color: var(--sidebar-bg);
+  color: white;
+  padding: 0.7rem 0.6rem;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  user-select: none;
 }
 
 /* CONTENIDO */
@@ -104,8 +116,6 @@ body {
 /* FOOTER */
 footer {
   background-color: #212529;
-  position: relative;
-  z-index: 100;
 }
 
 .footer-inner {
@@ -118,13 +128,10 @@ footer {
     display: none;
   }
 
-  .main-content {
+  .main-content,
+  .footer-inner {
     margin-left: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .footer-inner {
-    margin-left: 0;
   }
 }
