@@ -2,23 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Información – Taller de Arte</title>
+  <title>Información — Taller de Arte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+  <!-- Google Fonts (fallbacks) -->
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&family=Bungee&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Taller de Arte</a>
+
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -30,83 +37,120 @@
   </div>
 </nav>
 
-<!-- BOTÓN SIDEBAR MOBILE -->
-<div class="container pt-5 mt-4 d-md-none">
-  <button class="btn btn-dark w-100 mb-3"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#sidebarMobile">
-    Contenido
-  </button>
-</div>
+<!-- SIDEBAR DESKTOP -->
+<aside class="sidebar d-none d-md-flex flex-column">
+  <h5 class="mb-4">Información</h5>
+  <nav class="nav flex-column gap-2">
+    <a class="nav-link p-0" href="#participar">Participar</a>
+    <a class="nav-link p-0" href="#metodologia">Metodología</a>
+    <a class="nav-link p-0" href="#materiales">Materiales</a>
+    <a class="nav-link p-0" href="#ubicacion">Ubicación</a>
+    <a class="nav-link p-0" href="#descargas">Descargas</a>
+  </nav>
+</aside>
 
-<div class="container pb-5">
-  <div class="row g-4">
-
-    <!-- SIDEBAR DESKTOP -->
-    <aside class="col-md-3 d-none d-md-block">
-      <nav class="sidebar p-3 sticky-top">
-        <ul class="list-unstyled mb-0">
-          <li><a href="#requisitos">Requisitos</a></li>
-          <li><a href="#compromisos">Compromisos</a></li>
-          <li><a href="#materiales">Materiales</a></li>
-          <li><a href="#fechas">Fechas</a></li>
-          <li><a href="#ubicacion">Ubicación</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <!-- CONTENIDO -->
-    <main class="col-md-9">
-      <section id="requisitos" class="papel p-4 mb-4">
-        <h1>Requisitos</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </section>
-
-      <section id="compromisos" class="papel p-4 mb-4">
-        <h2>Compromisos</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </section>
-
-      <section id="materiales" class="papel p-4 mb-4">
-        <h2>Materiales</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </section>
-
-      <section id="fechas" class="papel p-4 mb-4">
-        <h2>Fechas y duración</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </section>
-
-      <section id="ubicacion" class="papel p-4">
-        <h2>Ubicación y cómo llegar</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </section>
-    </main>
-
-  </div>
+<!-- PESTAÑA SIDEBAR MOBILE -->
+<div class="sidebar-tab d-md-none"
+     data-bs-toggle="offcanvas"
+     data-bs-target="#sidebarMobile">
+  ☰
 </div>
 
 <!-- SIDEBAR MOBILE -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMobile">
+<div class="offcanvas offcanvas-start sidebar-mobile" id="sidebarMobile">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Contenido</h5>
-    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    <h5 class="offcanvas-title">Información</h5>
+    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
   </div>
   <div class="offcanvas-body">
-    <ul class="list-unstyled">
-      <li><a href="#requisitos" data-bs-dismiss="offcanvas">Requisitos</a></li>
-      <li><a href="#compromisos" data-bs-dismiss="offcanvas">Compromisos</a></li>
-      <li><a href="#materiales" data-bs-dismiss="offcanvas">Materiales</a></li>
-      <li><a href="#fechas" data-bs-dismiss="offcanvas">Fechas</a></li>
-      <li><a href="#ubicacion" data-bs-dismiss="offcanvas">Ubicación</a></li>
-    </ul>
+    <nav class="nav flex-column gap-3">
+      <a class="nav-link" href="#participar" data-bs-dismiss="offcanvas">Participar</a>
+      <a class="nav-link" href="#metodologia" data-bs-dismiss="offcanvas">Metodología</a>
+      <a class="nav-link" href="#materiales" data-bs-dismiss="offcanvas">Materiales</a>
+      <a class="nav-link" href="#ubicacion" data-bs-dismiss="offcanvas">Ubicación</a>
+      <a class="nav-link" href="#descargas" data-bs-dismiss="offcanvas">Descargas</a>
+    </nav>
   </div>
 </div>
 
-<footer class="bg-dark text-white mt-5">
-  <div class="container py-4 text-center">
-    <strong>Taller de Arte Gratuito</strong><br>
-    contacto@tallerarte.cl
+<!-- CONTENIDO PRINCIPAL -->
+<main class="main-content">
+  <article class="papel-largo p-5">
+
+    <section id="participar" class="mb-5">
+      <h1>Participar</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        convallis laoreet nulla, quis consequat sapien commodo in.
+      </p>
+      <p>
+        Phasellus sed sem arcu. Etiam tempus sem at ligula viverra eleifend.
+        Proin ullamcorper, justo in pellentesque.
+      </p>
+    </section>
+
+    <section id="metodologia" class="mb-5">
+      <h2>Programa y metodología</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+        Integer euismod, sem sit amet fermentum.
+      </p>
+    </section>
+
+    <section id="materiales" class="mb-5">
+      <h2>Materiales</h2>
+      <p>
+        Lorem ipsum dolor sit amet. A continuación, una lista referencial:
+      </p>
+      <ul>
+        <li>Papel para dibujo</li>
+        <li>Lápices grafito</li>
+        <li>Borrador y regla</li>
+        <li>Materiales específicos según taller</li>
+      </ul>
+    </section>
+
+    <section id="ubicacion" class="mb-5">
+      <h2>Ubicación y horarios</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p>
+        Dirección, días y horarios se informan al momento de la inscripción.
+      </p>
+    </section>
+
+    <section id="descargas">
+      <h2>Material descargable</h2>
+      <p>
+        Lorem ipsum dolor sit amet. Aquí podrás encontrar documentos, guías
+        y material de apoyo.
+      </p>
+      <ul>
+        <li><a href="#">Programa del taller (PDF)</a></li>
+        <li><a href="#">Guía de materiales (PDF)</a></li>
+      </ul>
+    </section>
+
+  </article>
+</main>
+
+<!-- FOOTER -->
+<footer class="text-white mt-5">
+  <div class="footer-inner">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <strong>Taller de Arte Gratuito</strong><br>
+          contacto@tallerarte.cl
+        </div>
+        <div class="col-md-6 text-md-end">
+          <i class="bi bi-instagram me-3"></i>
+          <i class="bi bi-facebook me-3"></i>
+          <i class="bi bi-envelope"></i>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
