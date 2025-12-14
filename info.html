@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Información — Taller de grabado</title>
+  <title>Información — Taller de arte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap -->
@@ -20,7 +20,7 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Taller de grabado</a>
+    <a class="navbar-brand" href="index.html">Taller de arte</a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
@@ -39,38 +39,31 @@
 
 <!-- SIDEBAR DESKTOP -->
 <aside class="sidebar d-none d-md-flex flex-column">
-  <h5 class="mb-4">Información</h5>
+  <h5 class="mb-4">Contenido</h5>
   <nav class="nav flex-column gap-2">
     <a class="nav-link p-0" href="#participar">Participar</a>
     <a class="nav-link p-0" href="#metodologia">Metodología</a>
     <a class="nav-link p-0" href="#materiales">Materiales</a>
     <a class="nav-link p-0" href="#ubicacion">Ubicación</a>
-    <a class="nav-link p-0" href="#descargas">Descargas</a>
+    <a class="nav-link p-0" href="#descargas">Descargas</a>    
   </nav>
 </aside>
 
-<!-- PESTAÑA SIDEBAR MOBILE -->
-<div class="sidebar-tab d-md-none"
-     data-bs-toggle="offcanvas"
-     data-bs-target="#sidebarMobile">
-  ☰
-</div>
-
-<!-- SIDEBAR MOBILE -->
-<div class="offcanvas offcanvas-start sidebar-mobile" id="sidebarMobile">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Información</h5>
-    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
+<!-- SIDEBAR MOBILE (propio) -->
+<div id="sidebarMobile" class="sidebar-mobile d-md-none">
+  <div class="sidebar-mobile-inner">
+    <h5 class="mb-4">Contenido</h5>
     <nav class="nav flex-column gap-3">
-      <a class="nav-link" href="#participar" data-bs-dismiss="offcanvas">Participar</a>
-      <a class="nav-link" href="#metodologia" data-bs-dismiss="offcanvas">Metodología</a>
-      <a class="nav-link" href="#materiales" data-bs-dismiss="offcanvas">Materiales</a>
-      <a class="nav-link" href="#ubicacion" data-bs-dismiss="offcanvas">Ubicación</a>
-      <a class="nav-link" href="#descargas" data-bs-dismiss="offcanvas">Descargas</a>
+      <a class="nav-link" href="#participar">Participar</a>
+      <a class="nav-link" href="#metodologia">Metodología</a>
+      <a class="nav-link" href="#materiales">Materiales</a>
+      <a class="nav-link" href="#ubicacion">Ubicación</a>
+      <a class="nav-link" href="#descargas">Descargas</a>
     </nav>
   </div>
+
+  <!-- TOGGLE -->
+  <div id="sidebarToggle" class="sidebar-toggle">&gt;</div>
 </div>
 
 
@@ -143,8 +136,8 @@
     <div class="container py-4">
       <div class="row align-items-center">
         <div class="col-md-6 mb-3 mb-md-0">
-          <strong>Taller de grabado</strong><br>
-          contacto@tallergrabado.cl
+          <strong>Taller de arte</strong><br>
+          contacto@tallerarte.cl
         </div>
         <div class="col-md-6 text-md-end">
           <i class="bi bi-instagram me-3"></i>
@@ -157,5 +150,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

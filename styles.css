@@ -116,6 +116,8 @@ body {
 /* FOOTER */
 footer {
   background-color: #212529;
+  position: relative;
+  z-index: 20;
 }
 
 .footer-inner {
