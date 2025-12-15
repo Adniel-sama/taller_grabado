@@ -1,6 +1,6 @@
 :root {
   --font-title: "Limelight", "Bungee", cursive;
-  --font-base: "Libre Baskerville", "Times New Roman", serif;
+  --font-base: "Times New Roman", "Libre Baskerville", serif;
   --font-ui: "Poppins", "Questrial", "Jost", sans-serif;
 
   --sidebar-bg: #7a2e2e; /* terracota */
@@ -8,6 +8,27 @@
   --navbar-height: 56px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding-bottom: 2pt;
+}
+
+.separador{
+  max-height: 36px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
 
 /* FONDO */
 body {
@@ -116,13 +137,45 @@ body {
   user-select: none;
 }
 
+.sidebar-list {
+  list-style: none; /* quitar viñetas por defecto */
+  padding-left: 1.5rem; /* espacio para la imagen */
+}
+
+.sidebar-list li {
+  position: relative; 
+  margin-bottom: 1rem; /* separación entre ítems */
+}
+
+/* VIÑETAS EN SIDEBAR */
+.sidebar .nav-link {
+  position: relative;
+  padding-left: 1.4rem; /* espacio para la viñeta */
+  color: #e6dede;
+  text-decoration: none;
+
+  background-image: url("icono2.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: left center;
+}
+
+/* HOVER SUTIL */
+.sidebar .nav-link:hover {
+  color: #ffffff;
+}
+
 /* CONTENIDO */
 .main-content {
-  margin-left: var(--sidebar-width);
+  /* margin-left: var(--sidebar-width); */
   padding-top: calc(var(--navbar-height) + 2rem);
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+/* .has-sidebar .main-content {
+  margin-left: var(--sidebar-width);
+} */
 
 /* PAPEL */
 .papel-largo {
@@ -138,11 +191,12 @@ body {
   list-style-position: inside;
   text-align: center;
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 /* FOOTER */
 footer {
+  font-family: var(--font-ui);
   background-color: #212529;
   position: relative;
   z-index: 20;
@@ -154,6 +208,7 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 767.98px) {
+
   .sidebar {
     display: none;
   }
@@ -163,5 +218,11 @@ footer {
     margin-left: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body.has-sidebar .main-content {
+    margin-left: var(--sidebar-width);
   }
 }
