@@ -1,6 +1,6 @@
 :root {
-  --font-bauhaus:"Limelight", "Bauhaus 93", "Bungee", cursive;
-  --font-base:"Times New Roman", "Century", "Libre Baskerville", serif;
+  --font-title: "Limelight", "Bungee", cursive;
+  --font-base: "Libre Baskerville", "Times New Roman", serif;
   --font-ui: "Poppins", "Questrial", "Jost", sans-serif;
 
   --sidebar-bg: #7a2e2e; /* terracota */
@@ -24,9 +24,7 @@ body {
   font-family: var(--font-ui);
 }
 .navbar-brand {
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: var(--font-title)
 }
 
 /* SIDEBAR DESKTOP */
