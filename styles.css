@@ -194,13 +194,13 @@ footer {
   background-position: left center;
 }
 
-.navbar-collapse .nav-link {
+.sidebar .nav-link {
   position: relative;
   padding-left: 1.4rem; /* espacio para la viñeta */
   color: #e6dede;
   text-decoration: none;
 
-  background-image: url("icono4.svg");
+  background-image: url("icono3.svg");
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: left center;
@@ -231,6 +231,18 @@ footer {
     margin-right: auto;
     margin-bottom: 1em;
   }
+
+  .navbar-collapse .nav-link {
+  position: relative;
+  padding-left: 1.4rem; /* espacio para la viñeta */
+  color: #e6dede;
+  text-decoration: none;
+
+  background-image: url("icono4.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: left center;
+}
 
 }
 
