@@ -1,7 +1,7 @@
 :root {
-  --font-bauhaus: "Bauhaus 93", "Bungee", cursive;
-  --font-base: "Century", "Libre Baskerville", serif;
-  --font-ui: "Century Gothic", "Montserrat", sans-serif;
+  --font-bauhaus:"Limelight", "Bauhaus 93", "Bungee", cursive;
+  --font-base:"Times New Romance", "Century", "Libre Baskerville", serif;
+  --font-ui: "Poppins", "Questrial", "Jost", "Century Gothic", "Montserrat", sans-serif;
 
   --sidebar-bg: #7a2e2e; /* terracota */
   --sidebar-width: 240px;
@@ -20,8 +20,13 @@ body {
 }
 
 /* NAVBAR */
+.navbar {
+  font-family: var(--font-ui);
+}
 .navbar-brand {
-  font-family: var(--font-bauhaus);
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* SIDEBAR DESKTOP */
