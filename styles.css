@@ -1,7 +1,7 @@
 :root {
   --font-bauhaus:"Limelight", "Bauhaus 93", "Bungee", cursive;
   --font-base:"Times New Romance", "Century", "Libre Baskerville", serif;
-  --font-ui: "Poppins", "Questrial", "Jost", "Century Gothic", "Montserrat", sans-serif;
+  --font-ui: "Poppins", "Questrial", "Jost", "Century Gothic", sans-serif;
 
   --sidebar-bg: #7a2e2e; /* terracota */
   --sidebar-width: 240px;
