@@ -247,6 +247,27 @@ footer {
   background-position: left center;
 }
 
+  @media (orientation: landscape) {
+    body {
+      display: none;
+    }
+
+    #rotate-message {
+      display: block;
+    }
+  }
+
+  /* Cuando está en vertical */
+  @media (orientation: portrait) {
+    body {
+      display: block;
+    }
+
+    #rotate-message {
+      display: none;
+    }
+  }
+
 }
 
 
