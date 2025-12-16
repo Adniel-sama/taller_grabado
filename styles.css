@@ -247,27 +247,16 @@ footer {
   background-position: left center;
 }
 
-  @media (orientation: landscape) {
-    body {
-      display: none;
-    }
+}
 
-    #rotate-message {
-      display: block;
-    }
+@media (orientation: landscape) and (max-height: 500px) {
+  .sidebar .nav {
+    gap: 0.1rem; /* reduce separación */
   }
 
-  /* Cuando está en vertical */
-  @media (orientation: portrait) {
-    body {
-      display: block;
-    }
-
-    #rotate-message {
-      display: none;
-    }
+  .sidebar .nav-link {
+    line-height: 0.5; /* reduce interlineado */
   }
-
 }
 
 
