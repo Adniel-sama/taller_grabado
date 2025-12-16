@@ -22,7 +22,7 @@ function openSidebar() {
   }
 
   sidebar.classList.add("open");
-  sidebarToggle.textContent = "×";
+  sidebarToggle.textContent = "<";
 }
 
 function toggleSidebar() {
@@ -65,6 +65,31 @@ document.querySelectorAll(".nav-link").forEach(link => {
   });
 });
 
+// -----------------------------
+// CERRAR AL CLICK FUERA
+// -----------------------------
+document.addEventListener("click", (e) => {
 
+  // ---- SIDEBAR ----
+  if (sidebar.classList.contains("open")) {
+    const clickInsideSidebar =
+      sidebar.contains(e.target) || sidebarToggle.contains(e.target);
+
+    if (!clickInsideSidebar) {
+      closeSidebar();
+    }
+  }
+
+  // ---- NAVBAR ----
+  if (navbarCollapse.classList.contains("show")) {
+    const clickInsideNavbar =
+      navbarCollapse.contains(e.target) ||
+      (navbarToggle && navbarToggle.contains(e.target));
+
+    if (!clickInsideNavbar) {
+      closeNavbar();
+    }
+  }
+});
 
 

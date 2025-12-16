@@ -132,10 +132,11 @@ body {
   transform: translateX(calc(100% - 1px));
   background-color: var(--sidebar-bg);
   color: white;
-  padding: 0.7rem 0.6rem;
+  padding: 1.2rem 0.8rem;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
   user-select: none;
+  font-size: 1.5rem;
 }
 
 /* CONTENIDO */
