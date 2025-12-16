@@ -250,12 +250,13 @@ footer {
 }
 
 @media (orientation: landscape) {
-  .sidebar .nav {
-    gap: 0.1rem; /* reduce separación */
+  .sidebar-mobile .nav {
+    gap: 0.01rem; /* reduce separación */
   }
 
-  .sidebar .nav-link {
-    line-height: 0.5; /* reduce interlineado */
+  .sidebar-mobile .nav-link {
+    line-height: 0.4; /* reduce interlineado */
+    background-size: 24px 24px;
   }
 }
 
