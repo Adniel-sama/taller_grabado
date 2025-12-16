@@ -250,6 +250,18 @@ footer {
 }
 
 @media (orientation: landscape) {
+  .sidebar-mobile {
+    padding: 0 1.25rem;
+  }
+
+  .sidebar-mobile-inner {
+    padding: 0.5rem 1.5rem;
+    color: #f2eaea;
+}
+
+  .sidebar-mobile-inner h5.mb-4{
+    margin-bottom: 0;
+}
   .sidebar-mobile .nav {
     gap: 0.01rem; /* reduce separación */
   }
