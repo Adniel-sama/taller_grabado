@@ -249,7 +249,7 @@ footer {
 
 }
 
-@media (orientation: landscape) and (max-height: 500px) {
+@media (orientation: landscape) {
   .sidebar .nav {
     gap: 0.1rem; /* reduce separación */
   }
