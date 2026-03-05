@@ -12,6 +12,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.texto-justificado p {
+  text-align: justify;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -208,6 +213,7 @@ footer {
   background-size: 24px 24px;
   background-position: left center;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 767.98px) {
