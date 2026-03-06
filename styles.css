@@ -10,6 +10,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  text-align: center;
 }
 
 .texto-justificado p {
@@ -168,10 +169,16 @@ body {
     0 6px 14px rgba(0,0,0,0.25),
     0 0 0 1px rgba(0,0,0,0.05);
   list-style-position: inside;
-  text-align: center;
+  text-align: justify;
   line-height: 1.5;
   /* font-size: 1.5rem; */
   
+}
+
+.limitado {
+  max-width: 800px; /* o 50vw */
+  width: 100%; /* Para que sea responsivo */
+  margin: 0 auto;
 }
 
 /* FOOTER */
