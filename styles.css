@@ -55,6 +55,16 @@ body {
   font-family: var(--font-title)
 }
 
+.navbar-toggler {
+  border: 3px solid rgb(188, 188, 188);
+  padding: 6px 10px;
+  transition: 0.3s;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
 /* SIDEBAR DESKTOP */
 .sidebar {
   position: fixed;
