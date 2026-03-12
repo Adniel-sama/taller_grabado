@@ -21,6 +21,9 @@ ul.nojustificado {
   text-align: left;
 }
 
+/* .btn {
+  font-family: var(--font-ui);
+} */
 
 img {
   max-width: 100%;
