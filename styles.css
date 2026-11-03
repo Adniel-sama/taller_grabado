@@ -232,6 +232,146 @@ footer {
   background-position: left center;
 }
 
+/* =====================================
+   EXPOSICIÓN
+===================================== */
+
+/* Miniaturas cuadradas */
+.obra-miniatura {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  overflow: hidden;
+  border: 5px solid white;
+  background: #eee;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.obra-miniatura img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.obra-miniatura:hover img {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+#modalObra .modal-content {
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+#modalObra .modal-header {
+  border-bottom: 1px solid #555;
+}
+
+#modalObra .modal-body {
+  padding: 1.5rem;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+/* Visor de imagen */
+.visor-obra {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  background: #111;
+}
+
+.imagen-ampliada {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+}
+
+/* Flechas */
+.visor-flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 42px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.visor-flecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.visor-flecha:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.visor-flecha.anterior {
+  left: 10px;
+}
+
+.visor-flecha.siguiente {
+  right: 10px;
+}
+
+/* Ficha técnica */
+.ficha-obra {
+  color: #222;
+  background-color: #f5f1e8;
+  background-image: url("textura-papel.png");
+  background-size: 400px 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow-wrap: anywhere;
+}
+
+.ficha-obra p {
+  margin-bottom: 0.8rem;
+}
+
+/* Enlaces de autores */
+.enlace-autor {
+  color: #7b3028;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.enlace-autor:hover {
+  color: #a64a3d;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 767.98px) {
+  #modalObra .modal-body {
+    padding: 1rem;
+  }
+
+  .imagen-ampliada {
+    max-height: 55vh;
+  }
+
+  .visor-flecha {
+    width: 35px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 767.98px) {

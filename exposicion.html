@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Exposición - Surcando hacia Asia</title>
+  <link rel="icon" type="image/png" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts (fallbacks) -->
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Bungee&family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- <body class="has-sidebar"> ###cambiar si se agrega sidebar### -->
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Taller de Grabado</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="info.html">Información</a></li>
+        <li class="nav-item"><a class="nav-link" href="inscripcion.html">Inscripción</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>s
+        <li class="nav-item"><a class="nav-link active" href="exposicion.html">Exposición</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SIDEBAR DESKTOP -->
+<!-- <aside class="sidebar d-none d-md-flex flex-column">
+  <h5 class="mb-4">Contenido</h5>
+  <nav class="nav flex-column gap-2">
+    <a class="nav-link p-0" href="#bienvenida">Bienvenida</a>
+    <a class="nav-link p-0" href="#historia">Historia</a>
+    <a class="nav-link p-0" href="#equipo">Equipo</a>
+    <a class="nav-link p-0" href="#principios">Principios</a>
+  </nav>
+</aside>  -->
+
+<!-- SIDEBAR MOBILE (propio) -->
+<!-- <div id="sidebarMobile" class="sidebar-mobile d-md-none">
+  <div class="sidebar-mobile-inner">
+    <h5 class="mb-4">Contenido</h5>
+    <nav class="nav flex-column gap-3">
+      <a class="nav-link" href="#bienvenida">Bienvenida</a>
+      <a class="nav-link" href="#historia">Historia</a>
+      <a class="nav-link" href="#equipo">Equipo</a>
+      <a class="nav-link" href="#principios">Principios</a>
+    </nav>
+  </div>  -->
+
+  <!-- TOGGLE -->
+ <!-- <div id="sidebarToggle" class="sidebar-toggle">&gt;</div>
+</div>  -->
+
+<!-- Contenido principal -->
+  <main class="main-content container-fluid px-3 px-lg-5 py-5">
+
+    <article class="papel-largo p-3 p-md-5 mx-auto" style="max-width: 1200px;">
+
+      <header class="text-center mb-5">
+        <h1>Exposición</h1>
+        <p>Obras realizadas por los participantes del taller.</p>
+      </header>
+
+<!-- FILTROS -->
+<section class="mb-4" id="filtros">
+
+  <p><b>Filtrar por autor:</b></p>
+
+  <div class="d-flex flex-wrap gap-2">
+
+    <button class="btn btn-outline-secondary btn-sm filtro active"
+            data-filtro="all">
+      Ver todo
+    </button>
+
+  </div>
+
+</section>
+
+<!-- CONTADOR -->
+<p id="contadorObras" class="text-muted mb-3"></p>
+
+      <!-- Galería de obras -->
+      <div id="galeriaExposicion" class="row g-3 g-md-4"></div>
+
+      <p id="mensajeGaleria" class="text-center mt-4" hidden></p>
+
+    </article>
+
+  </main>
+
+
+  <!-- Ventana de visualización (Lightbox) -->
+  <div class="modal fade" id="modalObra" tabindex="-1"
+       aria-labelledby="obraNombre" aria-hidden="true">
+
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="obraNombre"></h5>
+
+          <button type="button" class="btn-close btn-close-white"
+                  data-bs-dismiss="modal" aria-label="Cerrar">
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row align-items-center g-4">
+
+            <!-- Imagen ampliada -->
+            <div class="col-lg-8">
+
+              <div class="visor-obra">
+
+                <button id="obraAnterior" class="visor-flecha anterior"
+                        type="button" aria-label="Obra anterior">
+                  &#10094;
+                </button>
+
+                <img id="imagenGrande" class="imagen-ampliada" src="" alt="">
+
+                <button id="obraSiguiente" class="visor-flecha siguiente"
+                        type="button" aria-label="Obra siguiente">
+                  &#10095;
+                </button>
+
+              </div>
+
+              <p id="obraPosicion" class="text-center mt-3 mb-0"></p>
+
+            </div>
+
+            <!-- Ficha técnica -->
+            <div class="col-lg-4">
+
+              <div class="ficha-obra p-4">
+
+                <h5 class="mb-3">Ficha técnica</h5>
+
+                <p>
+                  <strong>Año:</strong>
+                  <span id="obraAnio"></span>
+                </p>
+
+                <p>
+                  <strong>Dimensiones:</strong>
+                  <span id="obraDimensiones"></span>
+                </p>
+
+                <p>
+                  <strong>Técnica:</strong>
+                  <span id="obraTecnica"></span>
+                </p>
+
+                <p>
+                  <strong>Soporte:</strong>
+                  <span id="obraSoporte"></span>
+                </p>
+
+                <p class="mb-0">
+                  <strong>Autor(es):</strong>
+                  <span id="obraAutores"></span>
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Pie de página -->
+  <footer class="text-white mt-5">
+
+    <div class="footer-inner">
+
+      <div class="container py-4">
+
+        <div class="row align-items-center">
+
+          <div class="col-md-6 mb-3 mb-md-0">
+            <strong>Taller de arte</strong><br>
+            contacto@tallerarte.cl
+          </div>
+
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-white me-3">Instagram</a>
+            <a href="#" class="text-white me-3">Facebook</a>
+            <a href="mailto:contacto@tallerarte.cl" class="text-white">Correo</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/exposicion.js"></script>
+
+</body>
+</html>
