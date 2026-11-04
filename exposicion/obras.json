@@ -86,8 +86,8 @@
   },
   {
     "id": 8,
-    "imagen": "exposicion/obras/arbol-arce.jpg",
-    "titulo": "Árbol, arce",
+    "imagen": "exposicion/obras/arbol-arce-gingko.jpg",
+    "titulo": "Árbol, arce - Árbol, gingko",
     "anio": 2026,
     "dimensiones": "35 x 54 cm",
     "tecnica": "Técnica mixta: linografía con aplicaciones de sello",
@@ -97,19 +97,7 @@
       { "id": "adniel", "nombre": "Adniel" }
     ]
   },
-  {
-    "id": 9,
-    "imagen": "exposicion/obras/arbol-gingko.jpg",
-    "titulo": "Árbol, ginkgo",
-    "anio": 2026,
-    "dimensiones": "35 x 54 cm",
-    "tecnica": "Técnica mixta: linografía con aplicaciones de sello",
-    "soporte": "Opalina",
-    "autores": [
-      { "id": "gema", "nombre": "Gema" },
-      { "id": "adniel", "nombre": "Adniel" }
-    ]
-  },
+
   {
     "id": 10,
     "imagen": "exposicion/obras/kokeshi.jpg",
