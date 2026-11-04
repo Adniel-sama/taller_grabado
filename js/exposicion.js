@@ -10,9 +10,8 @@ let obras = [];
 let obrasFiltradas = [];
 let indiceActual = 0;
 
-// Elementos de la ficha técnica
 const campos = {
-  nombre: document.getElementById("obraNombre"),
+  titulo: document.getElementById("obraTitulo"),
   anio: document.getElementById("obraAnio"),
   dimensiones: document.getElementById("obraDimensiones"),
   tecnica: document.getElementById("obraTecnica"),
@@ -22,8 +21,6 @@ const campos = {
   posicion: document.getElementById("obraPosicion")
 };
 
-
-// Cargar obras
 async function cargarObras() {
   try {
     const respuesta = await fetch("exposicion/obras.json");
@@ -33,7 +30,6 @@ async function cargarObras() {
     }
 
     obras = await respuesta.json();
-
     generarFiltros();
     filtrarObras("all");
 
@@ -44,8 +40,6 @@ async function cargarObras() {
   }
 }
 
-
-// Generar botones de autores automáticamente
 function generarFiltros() {
   const autores = new Map();
 
@@ -58,7 +52,6 @@ function generarFiltros() {
   [...autores.entries()]
     .sort((a, b) => a[1].localeCompare(b[1], "es"))
     .forEach(([id, nombre]) => {
-
       const boton = document.createElement("button");
 
       boton.className = "btn btn-outline-secondary btn-sm filtro";
@@ -69,8 +62,6 @@ function generarFiltros() {
     });
 }
 
-
-// Filtrar obras
 function filtrarObras(autor) {
   obrasFiltradas = autor === "all"
     ? obras
@@ -81,8 +72,6 @@ function filtrarObras(autor) {
   mostrarObras();
 }
 
-
-// Mostrar miniaturas
 function mostrarObras() {
   galeria.replaceChildren();
 
@@ -98,18 +87,17 @@ function mostrarObras() {
   }
 
   obrasFiltradas.forEach((obra, indice) => {
-
     const columna = document.createElement("div");
     columna.className = "col-6 col-md-4 col-lg-3";
 
     const boton = document.createElement("button");
     boton.type = "button";
     boton.className = "obra-miniatura";
-    boton.setAttribute("aria-label", `Ver ${obra.nombre}`);
+    boton.setAttribute("aria-label", `Ver ${obra.titulo}`);
 
     const imagen = document.createElement("img");
     imagen.src = obra.imagen;
-    imagen.alt = obra.nombre;
+    imagen.alt = obra.titulo;
     imagen.loading = "lazy";
 
     boton.appendChild(imagen);
@@ -120,36 +108,30 @@ function mostrarObras() {
   });
 }
 
-
-// Abrir Lightbox
 function abrirObra(indice) {
   indiceActual = indice;
   actualizarModal();
   modal.show();
 }
 
-
-// Actualizar ficha técnica
 function actualizarModal() {
   const obra = obrasFiltradas[indiceActual];
 
-  campos.nombre.textContent = obra.nombre;
+  campos.titulo.textContent = obra.titulo;
   campos.anio.textContent = obra.anio;
   campos.dimensiones.textContent = obra.dimensiones;
   campos.tecnica.textContent = obra.tecnica;
   campos.soporte.textContent = obra.soporte;
 
   campos.imagen.src = obra.imagen;
-  campos.imagen.alt = obra.nombre;
+  campos.imagen.alt = obra.titulo;
 
   campos.posicion.textContent =
     `${indiceActual + 1} / ${obrasFiltradas.length}`;
 
-  // Enlaces a los autores
   campos.autores.replaceChildren();
 
   (obra.autores || []).forEach((autor, indice) => {
-
     const enlace = document.createElement("a");
 
     enlace.href = `exposicion/${autor.id}.html`;
@@ -169,8 +151,6 @@ function actualizarModal() {
   document.getElementById("obraSiguiente").disabled = desactivar;
 }
 
-
-// Navegar entre obras
 function cambiarObra(direccion) {
   if (obrasFiltradas.length < 2) return;
 
@@ -181,8 +161,6 @@ function cambiarObra(direccion) {
   actualizarModal();
 }
 
-
-// Eventos de los filtros
 filtros.addEventListener("click", evento => {
   const boton = evento.target.closest(".filtro");
 
@@ -194,8 +172,6 @@ filtros.addEventListener("click", evento => {
   filtrarObras(boton.dataset.filtro);
 });
 
-
-// Eventos de navegación
 document.getElementById("obraAnterior").addEventListener("click", () => {
   cambiarObra(-1);
 });
@@ -204,8 +180,6 @@ document.getElementById("obraSiguiente").addEventListener("click", () => {
   cambiarObra(1);
 });
 
-
-// Navegación mediante teclado
 document.addEventListener("keydown", evento => {
   if (!modalElemento.classList.contains("show")) return;
 
@@ -213,6 +187,4 @@ document.addEventListener("keydown", evento => {
   if (evento.key === "ArrowRight") cambiarObra(1);
 });
 
-
-// Iniciar exposición
 cargarObras();

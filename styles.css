@@ -261,33 +261,39 @@ footer {
   transform: scale(1.05);
 }
 
-/* Lightbox */
-#modalObra .modal-content {
-  background: #222;
-  color: white;
-  border: 1px solid #555;
-}
-
+/* Elimina el fondo y los bordes del contenedor del modal */
+#modalObra .modal-content,
 #modalObra .modal-header {
-  border-bottom: 1px solid #555;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 #modalObra .modal-body {
-  padding: 1.5rem;
+  padding: 2rem 1rem;
 }
 
 .modal-backdrop.show {
   opacity: 0.9;
 }
 
-/* Visor de imagen */
+/* Botón para cerrar */
+.cerrar-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 1rem;
+}
+
+/* Imagen */
 .visor-obra {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 250px;
-  background: #111;
+  background: transparent;
 }
 
 .imagen-ampliada {
@@ -297,7 +303,7 @@ footer {
   object-fit: contain;
 }
 
-/* Flechas */
+/* Flechas de navegación */
 .visor-flecha {
   position: absolute;
   top: 50%;
@@ -344,7 +350,6 @@ footer {
   margin-bottom: 0.8rem;
 }
 
-/* Enlaces de autores */
 .enlace-autor {
   color: #7b3028;
   text-decoration: underline;
@@ -355,10 +360,9 @@ footer {
   color: #a64a3d;
 }
 
-/* Adaptación a móviles */
 @media (max-width: 767.98px) {
   #modalObra .modal-body {
-    padding: 1rem;
+    padding: 2.5rem 0.5rem 1rem;
   }
 
   .imagen-ampliada {

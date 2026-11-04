@@ -108,91 +108,70 @@
 
 
   <!-- Ventana de visualización (Lightbox) -->
-  <div class="modal fade" id="modalObra" tabindex="-1"
-       aria-labelledby="obraNombre" aria-hidden="true">
+  
+  <div class="modal fade" id="modalObra" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content modal-contenido-minimalista">
 
-    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <button
+        type="button"
+        class="btn-close btn-close-white cerrar-modal"
+        data-bs-dismiss="modal"
+        aria-label="Cerrar">
+      </button>
 
-      <div class="modal-content">
+      <div class="modal-body">
+        <div class="row align-items-center g-4">
 
-        <div class="modal-header">
-          <h5 class="modal-title" id="obraNombre"></h5>
+          <!-- IMAGEN -->
+          <div class="col-12 col-lg-8">
+            <div class="visor-obra">
+              <button
+                type="button"
+                class="visor-flecha anterior"
+                id="obraAnterior"
+                aria-label="Obra anterior">
+                &#10094;
+              </button>
 
-          <button type="button" class="btn-close btn-close-white"
-                  data-bs-dismiss="modal" aria-label="Cerrar">
-          </button>
-        </div>
+              <img
+                id="imagenGrande"
+                class="imagen-ampliada"
+                src=""
+                alt="">
 
-        <div class="modal-body">
-
-          <div class="row align-items-center g-4">
-
-            <!-- Imagen ampliada -->
-            <div class="col-lg-8">
-
-              <div class="visor-obra">
-
-                <button id="obraAnterior" class="visor-flecha anterior"
-                        type="button" aria-label="Obra anterior">
-                  &#10094;
-                </button>
-
-                <img id="imagenGrande" class="imagen-ampliada" src="" alt="">
-
-                <button id="obraSiguiente" class="visor-flecha siguiente"
-                        type="button" aria-label="Obra siguiente">
-                  &#10095;
-                </button>
-
-              </div>
-
-              <p id="obraPosicion" class="text-center mt-3 mb-0"></p>
-
+              <button
+                type="button"
+                class="visor-flecha siguiente"
+                id="obraSiguiente"
+                aria-label="Obra siguiente">
+                &#10095;
+              </button>
             </div>
+          </div>
 
-            <!-- Ficha técnica -->
-            <div class="col-lg-4">
+          <!-- FICHA TÉCNICA -->
+          <div class="col-12 col-lg-4">
+            <div class="ficha-obra p-4">
+              <p><strong>Título:</strong> <span id="obraTitulo"></span></p>
+              <p><strong>Año:</strong> <span id="obraAnio"></span></p>
+              <p><strong>Dimensiones:</strong> <span id="obraDimensiones"></span></p>
+              <p><strong>Técnica:</strong> <span id="obraTecnica"></span></p>
+              <p><strong>Soporte:</strong> <span id="obraSoporte"></span></p>
+              <p><strong>Autor(es):</strong> <span id="obraAutores"></span></p>
 
-              <div class="ficha-obra p-4">
-
-                <h5 class="mb-3">Ficha técnica</h5>
-
-                <p>
-                  <strong>Año:</strong>
-                  <span id="obraAnio"></span>
-                </p>
-
-                <p>
-                  <strong>Dimensiones:</strong>
-                  <span id="obraDimensiones"></span>
-                </p>
-
-                <p>
-                  <strong>Técnica:</strong>
-                  <span id="obraTecnica"></span>
-                </p>
-
-                <p>
-                  <strong>Soporte:</strong>
-                  <span id="obraSoporte"></span>
-                </p>
-
-                <p class="mb-0">
-                  <strong>Autor(es):</strong>
-                  <span id="obraAutores"></span>
-                </p>
-
-              </div>
-
+              <p class="text-end mb-0">
+                <small id="obraPosicion"></small>
+              </p>
             </div>
-
           </div>
 
         </div>
       </div>
+
     </div>
   </div>
-
+</div>
 
   <!-- Pie de página -->
   <footer class="text-white mt-5">

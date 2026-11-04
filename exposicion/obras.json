@@ -1,246 +1,294 @@
 [
   {
     "id": 1,
-    "imagen": "exposicion/obras/1.png",
-    "nombre": "Gran Muralla China (长城)",
+    "imagen": "exposicion/obras/kitsune.jpg",
+    "titulo": "Kitsune",
     "anio": 2026,
-    "dimensiones": "35 x 54 cm",
+    "dimensiones": "24 x 34 cm",
     "tecnica": "Linografía",
-    "soporte": "Papel acuarela",
+    "soporte": "Papel fabriano",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" }
+      { "id": "adniel", "nombre": "Adniel" }
     ]
   },
   {
     "id": 2,
-    "imagen": "exposicion/obras/2.png",
-    "nombre": "Castillo japonés (城)",
+    "imagen": "exposicion/obras/kappa.jpg",
+    "titulo": "Kappa (河童)",
     "anio": 2026,
-    "dimensiones": "35 x 54 cm",
+    "dimensiones": "24 x 34 cm",
     "tecnica": "Linografía",
-    "soporte": "Opalina",
+    "soporte": "Papel fabriano",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" }
+      { "id": "adniel", "nombre": "Adniel" }
     ]
   },
   {
     "id": 3,
-    "imagen": "exposicion/obras/3.png",
-    "nombre": "Castillo japonés (城)",
+    "imagen": "exposicion/obras/kasaobake.jpg",
+    "titulo": "Kasa-obake (傘おばけ)",
     "anio": 2026,
-    "dimensiones": "35 x 50 cm",
+    "dimensiones": "24 x 34 cm",
     "tecnica": "Linografía",
-    "soporte": "Papel burano rojo",
+    "soporte": "Papel fabriano",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" }
+      { "id": "autor4", "nombre": "Autor 4" }
     ]
   },
   {
     "id": 4,
-    "imagen": "exposicion/obras/4.png",
-    "nombre": "Bosque de bambú",
+    "imagen": "exposicion/obras/pareja-kokeshis.jpg",
+    "titulo": "Pareja de kokeshis",
     "anio": 2026,
     "dimensiones": "35 x 54 cm",
     "tecnica": "Linografía",
     "soporte": "Opalina",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" }
+      { "id": "gema", "nombre": "Gema" }
     ]
   },
   {
     "id": 5,
-    "imagen": "exposicion/obras/5.png",
-    "nombre": "Pez koi",
+    "imagen": "exposicion/obras/torii.jpg",
+    "titulo": "Torii (鳥居)",
     "anio": 2026,
-    "dimensiones": "21 x 29 cm",
+    "dimensiones": "24 x 34 cm",
     "tecnica": "Linografía",
-    "soporte": "Papel para acuarela",
+    "soporte": "Papel fabriano",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" }
+      { "id": "hope", "nombre": "Hope L." }
     ]
   },
   {
     "id": 6,
-    "imagen": "exposicion/obras/6.png",
-    "nombre": "Kokeshi (小芥子)",
+    "imagen": "exposicion/obras/monje.jpg",
+    "titulo": "Monje",
     "anio": 2026,
-    "dimensiones": "21 x 29 cm",
+    "dimensiones": "35 x 54 cm",
     "tecnica": "Linografía",
-    "soporte": "Papel para acuarela",
+    "soporte": "Opalina",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" }
+      { "id": "hope", "nombre": "Hope L." }
     ]
   },
   {
     "id": 7,
-    "imagen": "exposicion/obras/7.png",
-    "nombre": "Árbol, sakura",
+    "imagen": "exposicion/obras/arbol-sakura.jpg",
+    "titulo": "Árbol, sakura",
     "anio": 2026,
     "dimensiones": "35 x 54 cm",
     "tecnica": "Técnica mixta: linografía con aplicaciones de sello",
     "soporte": "Opalina",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" },
-      { "id": "autor2", "nombre": "Autor 2" }
+      { "id": "gema", "nombre": "Gema" },
+      { "id": "adniel", "nombre": "Adniel" }
     ]
   },
   {
     "id": 8,
-    "imagen": "exposicion/obras/8.png",
-    "nombre": "Árbol, ginkgo",
+    "imagen": "exposicion/obras/arbol-arce.jpg",
+    "titulo": "Árbol, arce",
     "anio": 2026,
     "dimensiones": "35 x 54 cm",
     "tecnica": "Técnica mixta: linografía con aplicaciones de sello",
     "soporte": "Opalina",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" },
-      { "id": "autor2", "nombre": "Autor 2" }
+      { "id": "gema", "nombre": "Gema" },
+      { "id": "adniel", "nombre": "Adniel" }
     ]
   },
   {
     "id": 9,
-    "imagen": "exposicion/obras/9.png",
-    "nombre": "Árbol, arce",
+    "imagen": "exposicion/obras/arbol-gingko.jpg",
+    "titulo": "Árbol, ginkgo",
     "anio": 2026,
     "dimensiones": "35 x 54 cm",
     "tecnica": "Técnica mixta: linografía con aplicaciones de sello",
     "soporte": "Opalina",
     "autores": [
-      { "id": "autor1", "nombre": "Autor 1" },
-      { "id": "autor2", "nombre": "Autor 2" }
+      { "id": "gema", "nombre": "Gema" },
+      { "id": "adniel", "nombre": "Adniel" }
     ]
   },
   {
     "id": 10,
-    "imagen": "exposicion/obras/10.png",
-    "nombre": "Torii (鳥居)",
+    "imagen": "exposicion/obras/kokeshi.jpg",
+    "titulo": "Kokeshi (小芥子)",
     "anio": 2026,
-    "dimensiones": "24 x 34 cm",
+    "dimensiones": "21 x 29 cm",
     "tecnica": "Linografía",
-    "soporte": "Papel fabriano",
+    "soporte": "Papel para acuarela",
     "autores": [
-      { "id": "autor3", "nombre": "Autor 3" }
+      { "id": "gema", "nombre": "Gema" }
     ]
   },
   {
     "id": 11,
-    "imagen": "exposicion/obras/11.png",
-    "nombre": "Ramen",
+    "imagen": "exposicion/obras/bonsai.jpg",
+    "titulo": "Bonsai",
     "anio": 2026,
     "dimensiones": "21 x 29 cm",
     "tecnica": "Linografía",
     "soporte": "Papel para acuarela",
     "autores": [
-      { "id": "autor3", "nombre": "Autor 3" }
+      { "id": "gema", "nombre": "Gema" }
     ]
   },
   {
     "id": 12,
-    "imagen": "exposicion/obras/12.png",
-    "nombre": "Panda rojo",
-    "anio": 2026,
-    "dimensiones": "35 x 54 cm",
-    "tecnica": "Linografía",
-    "soporte": "Opalina",
-    "autores": [
-      { "id": "autor3", "nombre": "Autor 3" }
-    ]
-  },
-  {
-    "id": 13,
-    "imagen": "exposicion/obras/13.png",
-    "nombre": "Monje",
-    "anio": 2026,
-    "dimensiones": "35 x 54 cm",
-    "tecnica": "Linografía",
-    "soporte": "Opalina",
-    "autores": [
-      { "id": "autor3", "nombre": "Autor 3" }
-    ]
-  },
-  {
-    "id": 14,
-    "imagen": "exposicion/obras/14.png",
-    "nombre": "Maneki-neko (招き猫)",
-    "anio": 2026,
-    "dimensiones": "35 x 54 cm",
-    "tecnica": "Linografía",
-    "soporte": "Opalina",
-    "autores": [
-      { "id": "autor3", "nombre": "Autor 3" }
-    ]
-  },
-  {
-    "id": 15,
-    "imagen": "exposicion/obras/15.png",
-    "nombre": "Kasa-obake (傘おばけ)",
-    "anio": 2026,
-    "dimensiones": "24 x 34 cm",
-    "tecnica": "Linografía",
-    "soporte": "Papel fabriano",
-    "autores": [
-      { "id": "autor4", "nombre": "Autor 4" }
-    ]
-  },
-  {
-    "id": 16,
-    "imagen": "exposicion/obras/16.png",
-    "nombre": "Juego de té",
+    "imagen": "exposicion/obras/pez-koi.jpg",
+    "titulo": "Pez koi",
     "anio": 2026,
     "dimensiones": "21 x 29 cm",
     "tecnica": "Linografía",
     "soporte": "Papel para acuarela",
     "autores": [
-      { "id": "autor4", "nombre": "Autor 4" }
+      { "id": "gema", "nombre": "Gema" }
     ]
   },
   {
-    "id": 17,
-    "imagen": "exposicion/obras/17.png",
-    "nombre": "Godzilla",
-    "anio": 2026,
-    "dimensiones": "38 x 56 cm",
-    "tecnica": "Linografía",
-    "soporte": "Papel de algodón",
-    "autores": [
-      { "id": "autor2", "nombre": "Autor 2" }
-    ]
-  },
-  {
-    "id": 18,
-    "imagen": "exposicion/obras/18.png",
-    "nombre": "Kitsune",
-    "anio": 2026,
-    "dimensiones": "24 x 34 cm",
-    "tecnica": "Linografía",
-    "soporte": "Papel fabriano",
-    "autores": [
-      { "id": "autor2", "nombre": "Autor 2" }
-    ]
-  },
-  {
-    "id": 19,
-    "imagen": "exposicion/obras/19.png",
-    "nombre": "Kappa (河童)",
-    "anio": 2026,
-    "dimensiones": "24 x 34 cm",
-    "tecnica": "Linografía",
-    "soporte": "Papel fabriano",
-    "autores": [
-      { "id": "autor2", "nombre": "Autor 2" }
-    ]
-  },
-  {
-    "id": 20,
-    "imagen": "exposicion/obras/20.png",
-    "nombre": "Estanque",
+    "id": 13,
+    "imagen": "exposicion/obras/estanque.jpg",
+    "titulo": "Estanque",
     "anio": 2026,
     "dimensiones": "70 x 50 cm",
     "tecnica": "Linografía",
     "soporte": "Papel fabriano",
     "autores": [
-      { "id": "autor2", "nombre": "Autor 2" },
-      { "id": "autor3", "nombre": "Autor 3" }
+      { "id": "adniel", "nombre": "Adniel" },
+      { "id": "hope", "nombre": "Hope L." }
+    ]
+  },
+  {
+    "id": 14,
+    "imagen": "exposicion/obras/panda-rojo.jpg",
+    "titulo": "Panda rojo",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Opalina",
+    "autores": [
+      { "id": "hope", "nombre": "Hope L." }
+    ]
+  },
+  {
+    "id": 15,
+    "imagen": "exposicion/obras/castillo.jpg",
+    "titulo": "Castillo japonés (城)",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Opalina",
+    "autores": [
+      { "id": "gema", "nombre": "Gema" }
+    ]
+  },
+  {
+    "id": 16,
+    "imagen": "exposicion/obras/castillo-rojo.jpg",
+    "titulo": "Castillo japonés (城)",
+    "anio": 2026,
+    "dimensiones": "35 x 50 cm",
+    "tecnica": "Linografía",
+    "soporte": "Papel burano rojo",
+    "autores": [
+      { "id": "gema", "nombre": "Gema" }
+    ]
+  },
+  {
+    "id": 17,
+    "imagen": "exposicion/obras/godzilla.jpg",
+    "titulo": "Godzilla",
+    "anio": 2026,
+    "dimensiones": "38 x 56 cm",
+    "tecnica": "Linografía",
+    "soporte": "Papel de algodón",
+    "autores": [
+      { "id": "adniel", "nombre": "Adniel" }
+    ]
+  },
+  {
+    "id": 18,
+    "imagen": "exposicion/obras/bambu.jpg",
+    "titulo": "Bosque de bambú",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Opalina",
+    "autores": [
+      { "id": "gema", "nombre": "Gema" }
+    ]
+  },
+  {
+    "id": 19,
+    "imagen": "exposicion/obras/muralla.jpg",
+    "titulo": "Gran Muralla China (长城)",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Papel acuarela",
+    "autores": [
+      { "id": "gema", "nombre": "Gema" }
+    ]
+  },
+  {
+    "id": 20,
+    "imagen": "exposicion/obras/juedo-te.jpg",
+    "titulo": "Juego de té",
+    "anio": 2026,
+    "dimensiones": "21 x 29 cm",
+    "tecnica": "Linografía",
+    "soporte": "Papel para acuarela",
+    "autores": [
+      { "id": "autor4", "nombre": "Autor 4" }
+    ]
+  },
+  {
+    "id": 21,
+    "imagen": "exposicion/obras/ramen.jpg",
+    "titulo": "Ramen",
+    "anio": 2026,
+    "dimensiones": "21 x 29 cm",
+    "tecnica": "Linografía",
+    "soporte": "Papel para acuarela",
+    "autores": [
+      { "id": "hope", "nombre": "Hope L." }
+    ]
+  },
+  {
+    "id": 22,
+    "imagen": "exposicion/obras/maneki-negro.jpg",
+    "titulo": "Maneki-neko (招き猫), tinta negra",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Opalina",
+    "autores": [
+      { "id": "hope", "nombre": "Hope L." }
+    ]
+  },
+  {
+    "id": 23,
+    "imagen": "exposicion/obras/maneki-rojo.jpg",
+    "titulo": "Maneki-neko (招き猫), tinta roja",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Opalina",
+    "autores": [
+      { "id": "hope", "nombre": "Hope L." }
+    ]
+  },
+  {
+    "id": 24,
+    "imagen": "exposicion/obras/maneki-dorado.jpg",
+    "titulo": "Maneki-neko (招き猫), tinta dorada",
+    "anio": 2026,
+    "dimensiones": "35 x 54 cm",
+    "tecnica": "Linografía",
+    "soporte": "Opalina",
+    "autores": [
+      { "id": "hope", "nombre": "Hope L." }
     ]
   }
 ]
