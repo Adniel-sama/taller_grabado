@@ -100,8 +100,8 @@
 
   {
     "id": 10,
-    "imagen": "exposicion/obras/kokeshi.jpg",
-    "titulo": "Kokeshi (小芥子)",
+    "imagen": "exposicion/obras/bonsai-kokeshi.jpg",
+    "titulo": "Bonsái (盆栽) - Kokeshi (小芥子)",
     "anio": 2026,
     "dimensiones": "21 x 29 cm",
     "tecnica": "Linografía",
@@ -110,18 +110,7 @@
       { "id": "gema", "nombre": "Gema" }
     ]
   },
-  {
-    "id": 11,
-    "imagen": "exposicion/obras/bonsai.jpg",
-    "titulo": "Bonsai",
-    "anio": 2026,
-    "dimensiones": "21 x 29 cm",
-    "tecnica": "Linografía",
-    "soporte": "Papel para acuarela",
-    "autores": [
-      { "id": "gema", "nombre": "Gema" }
-    ]
-  },
+
   {
     "id": 12,
     "imagen": "exposicion/obras/pez-koi.jpg",
@@ -221,7 +210,7 @@
   },
   {
     "id": 20,
-    "imagen": "exposicion/obras/juedo-te.jpg",
+    "imagen": "exposicion/obras/juego-te.jpg",
     "titulo": "Juego de té",
     "anio": 2026,
     "dimensiones": "21 x 29 cm",
